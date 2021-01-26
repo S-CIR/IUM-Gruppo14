@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WikiPlants.Wiki"
+    android:weightSum="6"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#B32C4E19"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="#B32C4E19"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:id="@+id/seeding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="#B32C4E19"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:id="@+id/descr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_weight="4"
+        android:autoSizeTextType="uniform"
+        android:background="#B32C4E19"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff" />
+
+</LinearLayout>

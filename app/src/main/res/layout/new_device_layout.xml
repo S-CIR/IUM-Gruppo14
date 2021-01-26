@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2C4E19"
+        android:text="Aggiungi Dispositivo"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/dispimg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginVertical="10dp"
+            android:clickable="true" />
+
+        <Switch
+            android:id="@+id/switchBtn"
+            android:showText="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:switchMinWidth="200dp"
+            android:textOff="Sensore"
+            android:textOn="Drone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#BF2C4E19"
+            android:cursorVisible="false"
+            android:textColor="#fff"
+            android:textSize="50dp"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#fff"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:hint="Codice"
+        android:autoSizeTextType="uniform"
+        android:textColor="#000"
+        android:paddingHorizontal="2dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/marchio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#fff"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:hint="Marchio"
+        android:autoSizeTextType="uniform"
+        android:textColor="#000"
+        android:paddingHorizontal="2dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#fff"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:hint="Tipologia"
+        android:autoSizeTextType="uniform"
+        android:textColor="#000"
+        android:paddingHorizontal="2dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <Button
+        android:id="@+id/locDevice"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.7"
+        android:background="#E9FF59"
+        android:clickable="true"
+        android:text="Localizza"
+        android:textColor="#fff"
+        android:textColorHighlight="#000"
+        android:autoSizeTextType="uniform"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/confDevice"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.7"
+        android:background="#51E868"
+        android:clickable="true"
+        android:text="Conferma"
+        android:textColor="#fff"
+        android:textColorHighlight="#000"
+        android:autoSizeTextType="uniform"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"/>
+
+</LinearLayout>

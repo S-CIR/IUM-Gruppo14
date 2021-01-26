@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TheFarmer</string>
+    <string name="action_settings">Settings</string>
+    <string name="navDrawOpen">Open Navigation Drawer</string>
+    <string name="navDrawClose">Close Navigation Drawer</string>
+
+    <string name="consiglio_mensile">Un terreno profondo, ben nutrito e organico riesce a favorire la crescita di radici sane ed estese in grado di raggiungere più nutrienti e più acqua.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_retrieve">Retrieve</string>
+
+
+</resources>

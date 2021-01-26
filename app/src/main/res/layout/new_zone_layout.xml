@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MyPlantLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/zoneName"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:autoSizeTextType="uniform"/>
+
+    <TextView
+        android:text="Concimi e Pesticidi"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:autoSizeTextType="uniform"/>
+
+    <Switch
+        android:id="@+id/switchBtn"
+        android:showText="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:checked="true"
+        android:switchMinWidth="200dp"
+        android:textOff="Naturale"
+        android:textOn="Chimico"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#BF2C4E19"
+        android:cursorVisible="false"
+        android:textColor="#fff"
+        android:autoSizeTextType="uniform"/>
+
+    <TextView
+        android:id="@+id/textSpec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="#BF2C4E19"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/conf"
+        android:text="CONFERMA"
+        android:background="#51E868"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="65dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

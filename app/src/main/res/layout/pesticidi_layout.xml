@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MyPlantLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="Pesticidi"
+        android:textColor="#fff"
+        android:autoSizeTextType="uniform"/>
+
+    <GridView
+        android:numColumns="1"
+        android:id="@+id/listCon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:layout_marginHorizontal="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:id="@+id/CoMode"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cerchio"
+            android:textSize="40dp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

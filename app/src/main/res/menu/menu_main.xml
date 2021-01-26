@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+
+        <item
+            android:id="@+id/piante"
+            android:title="Le mie Piante"
+            android:checked="false"/>
+        <item
+            android:id="@+id/irrigazione"
+            android:title="Irrigazione"
+            android:checked="false"/>
+        <item
+            android:id="@+id/concimazione"
+            android:title="Concimazione"
+            android:checked="false"/>
+        <item
+            android:id="@+id/pesticidi"
+            android:title="Pesticidi"
+            android:checked="false"/>
+        <item
+            android:id="@+id/monitoraggio"
+            android:title="Monitoraggio"
+            android:checked="false"/>
+        <item
+            android:id="@+id/wiki"
+            android:title="Wiki-Plants"
+            android:checked="false"/>
+    </group>
+
+</menu>

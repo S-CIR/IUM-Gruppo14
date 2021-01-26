@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <group>
+
+        <item
+            android:id="@+id/home"
+            android:title="HOME"
+            android:icon="@drawable/home_ico"
+            app:showAsAction="ifRoom"/>
+
+        <item
+            android:id="@+id/profilo"
+            android:title="USER"
+            android:icon="@drawable/user_ico"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/add"
+            android:icon="@drawable/settings"
+            android:title="ADD"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+</menu>

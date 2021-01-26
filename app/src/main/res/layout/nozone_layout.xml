@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:backgroundTintMode="src_over"
+    android:background="@drawable/background"
+    tools:context=".Zone.NoZone">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textColor="#fff"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        android:background="#922C4E19"
+        android:paddingVertical="10dp"
+        android:layout_margin="15dp"
+        android:text="Le informazioni da te richieste non sono disponibili, aggiungi una pianta per poterle visualizzare!" />
+
+    <Button
+        android:id="@+id/newZone"
+        android:layout_width="match_parent"
+        android:background="#BFE9FF59"
+        android:textColor="#fff"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Inserisci Pianta"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="40dp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0.5"
+        android:autoSizeTextType="uniform"
+        android:background="#BF51E868"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="#fff" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/where"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:autoSizeTextType="uniform"/>
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"/>
+
+    <GridView
+        android:numColumns="1"
+        android:id="@+id/zonaPlant"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:id="@+id/backList"
+        android:layout_width="match_parent"
+        android:background="#51E868"
+        android:textColor="#fff"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Back"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlant.SelectZona"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="- Scegli la Zona -"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#B32C4E19"
+        />
+
+    <GridView
+        android:id="@+id/gridZone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="4.2"
+        android:numColumns="3"
+        android:horizontalSpacing="15dp"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/addZone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cerchio"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

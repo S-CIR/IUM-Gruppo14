@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8.1"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="8.1"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#BF2C4E19"
+            android:text="Benvenuto !"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="6"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal"
+            android:background="#BF2C4E19"
+            >
+
+            <TextView
+                android:id="@+id/ico"
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textSize="90dp"
+                android:textColor="#fff"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:weightSum="5.5"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/det"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:textStyle="italic"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/wind"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/hum"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/pres"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:numColumns="4"
+            android:horizontalSpacing="7dp"
+            android:background="#0034502E" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="5"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            android:background="#BF2C4E19"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="- Consiglio del Mese -"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                style="bold"
+                android:paddingHorizontal="20dp"
+                />
+            <TextView
+                android:id="@+id/sugg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform"
+                android:textColor="#fff"
+                android:paddingHorizontal="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

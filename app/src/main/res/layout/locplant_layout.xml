@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/background">
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapviewPlant"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/confLocation"
+        android:layout_width="match_parent"
+        android:background="#51E868"
+        android:textColor="#fff"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="LOCALIZZA"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>

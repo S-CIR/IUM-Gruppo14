@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WikiPlants.Wiki"
+    android:weightSum="6"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#B32C4E19"
+        android:text="Wiki-Plants"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:paddingTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/arom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:background="#B32C4E19"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="3"
+                android:src="@mipmap/aromatic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Aromatiche"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fruit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:background="#B32C4E19"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@mipmap/fruit"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Frutto"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vege"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:background="#B32C4E19"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@mipmap/vegetable"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Orto"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="5"
+        android:background="#B32C4E19"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="25dp">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#B32C4E19"
+            android:hint="Cerca..."
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/searchBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#B32C4E19"
+            android:gravity="center"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="- Consiglio del Mese -"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="#B32C4E19"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:id="@+id/sugg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_weight="3"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        android:text="@string/consiglio_mensile"
+        android:background="#B32C4E19"
+        android:paddingHorizontal="20dp"
+        android:textColor="#fff" />
+
+</LinearLayout>

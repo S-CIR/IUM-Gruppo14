@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:background="#2C4E19">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2C4E19"
+        android:text="Inserimento Pianta"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/plantimg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#fff"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginVertical="10dp"
+        android:clickable="true"
+        />
+
+    <EditText
+        android:id="@+id/nomepianta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#fff"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:hint="Nome"
+        android:autoSizeTextType="uniform"
+        android:textColor="#000"
+        android:paddingHorizontal="2dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/tipopianta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#fff"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:hint="Tipologia"
+        android:autoSizeTextType="uniform"
+        android:textColor="#000"
+        android:paddingHorizontal="2dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#E9FF59"
+        android:textColor="#fff"
+        android:clickable="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:ems="10"
+        android:autoSizeTextType="uniform"
+        android:text="Data di Semina" />
+
+    <TextView
+        android:id="@+id/zona"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:clickable="true"
+        android:background="#E9FF59"
+        android:textColor="#fff"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:ems="10"
+        android:text="Zona"
+        android:textColorHighlight="#000"
+        android:autoSizeTextType="uniform"/>
+
+    <Button
+        android:id="@+id/plantloc"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.7"
+        android:background="#E9FF59"
+        android:clickable="true"
+        android:text="Localizza"
+        android:textColor="#fff"
+        android:textColorHighlight="#000"
+        android:autoSizeTextType="uniform"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/plantconf"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.7"
+        android:background="#51E868"
+        android:clickable="true"
+        android:text="Conferma"
+        android:textColor="#fff"
+        android:textColorHighlight="#000"
+        android:autoSizeTextType="uniform"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"/>
+
+</LinearLayout>

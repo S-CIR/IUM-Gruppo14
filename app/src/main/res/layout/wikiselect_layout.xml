@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlant.SelectZona"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/searchKey"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:padding="5dp"
+        android:textAllCaps="true"
+        android:background="#B32C4E19"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/gridResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="5"
+        android:layout_marginTop="7dp"
+        android:numColumns="1"
+        android:horizontalSpacing="15dp" />
+
+</LinearLayout>

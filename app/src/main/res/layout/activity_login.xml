@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7"
+    android:orientation="vertical"
+    android:background="#2C4E19"
+    tools:context=".Menu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:src="@drawable/logo"
+        android:scaleType="center"
+        android:padding="150dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#2C4E19"
+        android:text="Benvenuto !"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#fff"
+        android:layout_marginVertical="22dp"
+        android:layout_gravity="center"
+        android:hint="User"
+        android:textSize="35dp"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:id="@+id/psw"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#fff"
+        android:layout_marginVertical="22dp"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:textSize="35dp"
+        android:textColor="#000"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/in"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:background="#51E868"
+        android:clickable="true"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textColorHighlight="#000"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/up"
+        android:clickable="true"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="SignUp"
+        android:background="#E9FF59"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        />
+
+    <TextView
+        android:id="@+id/lost"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Hai dimenticato le Credenziali?"
+        android:textColor="#fff"
+        android:paddingTop="50dp"
+        android:textStyle="italic"
+        />
+
+</LinearLayout>
